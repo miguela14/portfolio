@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { About } from "./components/About";
-// import { Contact } from "./components/Contact";
 import { Skills } from "./components/Skills";
 import { Works } from "./components/Works";
 import { Home } from "./components/Home";
