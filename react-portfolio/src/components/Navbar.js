@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Navbar.css";
 import {
     FaBars,
     FaTimes,
@@ -16,31 +17,31 @@ export const Navbar = () => {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       <div>
-        <h1 className=' font-thin text-2xl italic font-serif'>MAM</h1>
+        <h1 className=' font-thin text-2xl italic font-serif'>Miguel Moreno</h1>
       </div>
       {/* menu */}
       <ul className='hidden md:flex gap-x-8'>
-        <li>
+        <li className="nav-list-item">
           <NavLink to='/'>
             Home
           </NavLink>
         </li>
-        <li>
+        <li className="nav-list-item">
           <NavLink to='/about'>
             About
           </NavLink>
         </li>
-        <li>
+        <li className="nav-list-item">
           <NavLink to='/skills'>
             Skills
           </NavLink>
         </li>
-        <li>
+        <li className="nav-list-item">
           <NavLink to='/works'>
             Work
           </NavLink>
         </li>
-        <li>
+        <li className="nav-list-item">
           <NavLink to='/contact'>
             Contact
           </NavLink>
