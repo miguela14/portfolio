@@ -4,12 +4,10 @@ import {
     FaTimes,
     FaGithub,
     FaLinkedin,
-    FaFacebook,
-    FaLinkedinIn,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { Link } from 'react-scroll';
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -23,29 +21,29 @@ export const Navbar = () => {
       {/* menu */}
       <ul className='hidden md:flex gap-x-8'>
         <li>
-          <Link to='home' smooth={true} duration={500}>
+          <NavLink to='/'>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='about' smooth={true} duration={500}>
+          <NavLink to='/about'>
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='skills' smooth={true} duration={500}>
+          <NavLink to='/skills'>
             Skills
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='work' smooth={true} duration={500}>
+          <NavLink to='/works'>
             Work
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='contact' smooth={true} duration={500}>
+          <NavLink to='/contact'>
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
       {/* Hamburger */}
@@ -61,33 +59,33 @@ export const Navbar = () => {
         }
       >
         <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+          <NavLink onClick={handleClick} to='/'>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+          <NavLink onClick={handleClick} to='/about'>
             About
-          </Link>
+          </NavLink>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+          <NavLink onClick={handleClick} to='/skills'>
             Skills
-          </Link>
+          </NavLink>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+          <NavLink onClick={handleClick} to='/works'>
             Work
-          </Link>
+          </NavLink>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <NavLink onClick={handleClick} to='/contact'>
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
       {/* Social icons */}
@@ -96,7 +94,7 @@ export const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://www.linkedin.com/in/miguel-moreno-66b70a278/'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -104,7 +102,7 @@ export const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://github.com/miguela14'
             >
               Github <FaGithub size={30} />
             </a>
